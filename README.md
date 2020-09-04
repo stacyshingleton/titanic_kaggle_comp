@@ -33,6 +33,10 @@ The data has been selected by Kaggle, and is split into a training set and a tes
 
 ![](images/total_sex_counts.png)
 
+![](images/surivals_by_gender.png)
+
+
+
 
 
 
