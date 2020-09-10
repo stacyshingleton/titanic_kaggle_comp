@@ -21,6 +21,13 @@ The data has been selected by Kaggle, and is split into a training set and a tes
 * Cabin: Cabin identification
 * Embarked: Port of embarkation (C = Cherbourg; Q = Queenstown; S = Southampton)
 
+## Handling Missing Data
+
+Age was missing 177/891 values. It was assumed to be an important feature, and so this missing values were handled as so. The prefix of every passengers name was extracted, for example, Miss, Mr and Mrs, and the average age was calculated for each of these prefixes. The average age per prefix was used to fill in the missing age values according to the passengers prefix. 
+
+Cabin was missing 687/891 values, and since there were too many unique values to be useful, this feature column was dropped. 
+
+
 ## Visualizations
 
 ![](images/total_survival_counts.png)
@@ -36,8 +43,19 @@ The data has been selected by Kaggle, and is split into a training set and a tes
 ![](images/surivals_by_gender.png)
 
 
+## Results
 
+The following models were evaluated via F1 Score:
 
+* Random Forest Classifier
+* Gradient Boosting Classifier
+* XGBoost Classifier
+* Extra Trees Classifier
+* Bagging Classifier
+
+Without hyperparameter tuning, the highest F1 score, 0.82, was produced by the Gradient Boosting Classifier, with the following feature importance plot:
+
+![](images/gbc_F1.png)
 
 
 
