@@ -42,6 +42,8 @@ Cabin was missing 687/891 values, and since there were too many unique values to
 
 ![](images/surivals_by_gender.png)
 
+![]('images/survival_by_fare.png')
+
 
 ## Results
 
@@ -55,7 +57,7 @@ The following models were evaluated via F1 Score:
 
 Without hyperparameter tuning, the highest F1 score, 0.82, was produced by the Gradient Boosting Classifier, with the following feature importance plot:
 
-![](images/gbc_F1.png)
+![](images/gbc_FI.png)
 
 
 
